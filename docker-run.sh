@@ -41,6 +41,6 @@ docker run -d \
   --name frontend \
   --network todo-network \
   --env-file ./frontend/app.env \
-  -p 5173:80 \
+  -p 5173:8080 \
   $(docker build -q ./frontend)
 
